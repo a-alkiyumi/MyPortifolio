@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A personal developer portfolio built with React, showcasing my projects, skills, and experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+> _Add your deployed URL here — e.g. https://your-name.netlify.app_
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+| Technology | Purpose |
+|---|---|
+| React 18 | UI framework |
+| React Bootstrap | Component library & layout |
+| Bootstrap Icons | Icon set |
+| Animate.css | Scroll & entrance animations |
+| react-multi-carousel | Projects carousel |
+| react-on-screen | Trigger animations on scroll |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Sections
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Hero** — Introduction and call-to-action
+- **About** — Brief bio and background
+- **Skills** — Technologies and tools
+- **Projects** — Featured work with links
+- **Experience** — Work history, education, and freelance
+- **Contact** — Get in touch form or links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js v16 or higher
+- npm
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# 1. Clone the repository
+git clone https://github.com/a-alkiyumi/MyPortifolio.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 2. Navigate into the project
+cd MyPortifolio
 
-## Learn More
+# 3. Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 4. Start the development server
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app will open at `http://localhost:3000`.
 
-### Code Splitting
+### Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run build
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
+```
+src/
+├── components/        # One file per section (Hero, About, Skills, etc.)
+├── data/              # Static data files (projects, experience, skills)
+├── assets/            # Images and icons
+├── App.js             # Root component, section order
+└── index.js           # Entry point
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+All content lives in `src/data/`. To update your portfolio:
 
-### Deployment
+- Edit `experienceData.js` to add or change experience entries
+- Edit `projectsData.js` to add or change projects
+- Edit `skillsData.js` to update your tech stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+No need to touch the components themselves — they read from the data files automatically.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deployment
+
+This project can be deployed on any static hosting platform:
+
+- **Netlify** — drag and drop the `build/` folder, or connect your GitHub repo
+- **Vercel** — import the repo and it auto-detects Create React App
+- **GitHub Pages** — install `gh-pages` and add a `homepage` field in `package.json`
+
+---
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md) for a full history of changes.
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
