@@ -60,34 +60,3 @@ This project uses **Semantic Versioning**: `MAJOR.MINOR.PATCH`
 | `MINOR` | New feature added, backward compatible | `0.1.0` → `0.2.0` |
 | `MAJOR` | Big redesign or breaking structural change | `0.2.0` → `1.0.0` |
 
-## Change Type Guide
-
-Use these labels consistently in every release entry:
-
-| Label | Use it when you... |
-|---|---|
-| `Added` | Add a new section, component, feature, or file |
-| `Changed` | Modify existing behavior, layout, or content |
-| `Fixed` | Correct a bug, broken link, or visual glitch |
-| `Removed` | Delete a section, feature, or dependency |
-| `Style` | Make a purely visual/CSS change with no logic change |
-| `Chore` | Update dependencies, clean up code, refactor internals |
-
-## How to Add a New Entry
-
-When you finish a feature or fix, add a block at the top of this file (below `[Unreleased]`):
-
-```markdown
-## [0.3.0] — YYYY-MM-DD
-
-### Added
-- Brief description of what was added
-
-### Changed
-- Brief description of what changed
-
-### Fixed
-- Brief description of what was fixed
-```
-
-Keep entries short — one line per change is enough. The goal is a readable history, not a novel.

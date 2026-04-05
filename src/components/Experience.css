@@ -1,0 +1,262 @@
+.experience-section {
+  padding: 5rem 2rem;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.section-heading {
+  font-size: 30px;
+  font-weight: 500;
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+}
+
+.accent-line {
+  width: 36px;
+  height: 2px;
+  background: #7f77dd;
+  margin-bottom: 2.5rem;
+  border-radius: 0;
+}
+
+/* ── Filters ─────────────────────────────────────── */
+
+.filters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+  font-size: 12px;
+  padding: 5px 14px;
+  border-radius: 99px;
+  border: 0.5px solid #2a2a2a;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.filter-btn:hover:not(.active) {
+  border-color: #444;
+  color: #aaa;
+}
+
+.filter-btn.active {
+  background: #1a1a2e;
+  color: #c4c0f5;
+  border-color: #3c3a6e;
+}
+
+/* ── Timeline layout ─────────────────────────────── */
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.tl-item {
+  display: grid;
+  grid-template-columns: 90px 20px minmax(0, 1fr);
+  padding-bottom: 2rem;
+}
+
+.tl-left {
+  padding-top: 4px;
+  text-align: right;
+}
+
+.tl-year {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  display: block;
+}
+
+.tl-duration {
+  font-size: 11px;
+  color: #444;
+  display: block;
+  margin-top: 2px;
+}
+
+/* ── Timeline spine ──────────────────────────────── */
+
+.tl-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.tl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 4px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.dot-work {
+  background: #7f77dd;
+  box-shadow: 0 0 0 2px #0d0d0d, 0 0 0 3px #534ab7;
+}
+
+.dot-edu {
+  background: #1d9e75;
+  box-shadow: 0 0 0 2px #0d0d0d, 0 0 0 3px #0f6e56;
+}
+
+.dot-free {
+  background: #ba7517;
+  box-shadow: 0 0 0 2px #0d0d0d, 0 0 0 3px #854f0b;
+}
+
+.tl-bar {
+  flex: 1;
+  width: 1px;
+  background: #1e1e1e;
+  margin-top: 6px;
+}
+
+/* ── Card ────────────────────────────────────────── */
+
+.tl-right {
+  padding-left: 18px;
+  padding-top: 2px;
+}
+
+.tl-card {
+  background: #111;
+  border: 0.5px solid #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.tl-card:hover {
+  border-color: #2e2e2e;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.tl-role {
+  font-size: 15px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.tl-company {
+  font-size: 13px;
+  color: #7f77dd;
+  margin-bottom: 10px;
+}
+
+.tl-company.company-edu {
+  color: #1d9e75;
+}
+
+.tl-company.company-free {
+  color: #ba7517;
+}
+
+.tl-desc {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+/* ── Badges ──────────────────────────────────────── */
+
+.badge {
+  font-size: 10px;
+  padding: 2px 9px;
+  border-radius: 99px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.badge-work {
+  background: #1a1a2e;
+  color: #9f9bdf;
+  border: 0.5px solid #3c3a6e;
+}
+
+.badge-edu {
+  background: #0d1f1a;
+  color: #5dcaa5;
+  border: 0.5px solid #1d4a3a;
+}
+
+.badge-free {
+  background: #1f180d;
+  color: #ef9f27;
+  border: 0.5px solid #4a3a0b;
+}
+
+/* ── Tags ────────────────────────────────────────── */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 99px;
+}
+
+.tag-work {
+  background: #15152a;
+  color: #8580c5;
+  border: 0.5px solid #2e2b5a;
+}
+
+.tag-edu {
+  background: #0c1a15;
+  color: #1d9e75;
+  border: 0.5px solid #163d2c;
+}
+
+.tag-free {
+  background: #1a140a;
+  color: #ba7517;
+  border: 0.5px solid #3d2e0d;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+
+@media (max-width: 500px) {
+  .tl-item {
+    grid-template-columns: 70px 16px minmax(0, 1fr);
+  }
+
+  .tl-right {
+    padding-left: 12px;
+  }
+
+  .filters {
+    gap: 4px;
+  }
+}
